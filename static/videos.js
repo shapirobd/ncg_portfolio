@@ -82,7 +82,6 @@ function createColumn(i, y, imgPercent, count) {
 function randomFillGrid(vids, count, takenRowsCols) {
 	for (vid of vids) {
 		const { randRow, randCol } = determineRandRowCol(count, takenRowsCols);
-		console.log(vid.folder);
 		if (!vid.folder.includes("water")) {
 			$(`#column-${randRow}-${randCol}`).prepend(
 				generateHeaderHTML(vid.header)
@@ -174,7 +173,7 @@ function generateVidFileHTML(vid, count) {
 		return `
 		<div class="video i-only" id="${vid.filename}">
 			<video autoplay controls muted loop class="video i${count}" id="${vid.filename}">
-				<source src="../static/videos/${vid.folder}/${vid.filename}" type="video/${vid.extension}">
+				<source src="https://ncgbucket.s3.amazonaws.com/videos/${vid.folder}/${vid.filename}" type="video/${vid.extension}">
 			</video>
         </div>
     `;
@@ -182,7 +181,7 @@ function generateVidFileHTML(vid, count) {
 	return `
 		<div class="video i${count}" id="${vid.filename}">
 			<video autoplay controls muted loop class="video i${count}" id="${vid.filename}">
-				<source src="../static/videos/${vid.folder}/${vid.filename}" type="video/${vid.extension}">
+				<source src="https://ncgbucket.s3.amazonaws.com/videos/${vid.folder}/${vid.filename}" type="video/${vid.extension}">
 			</video>
         </div>
     `;

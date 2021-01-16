@@ -4,7 +4,7 @@ import os
 from flask import Flask, session, request, render_template, redirect, g, flash, jsonify
 # from flask_debugtoolbar import DebugToolbarExtension
 from models import db, connect_db, Image, Video
-from seed import runSeed
+# from seed import runSeed
 
 app = Flask(__name__)
 
@@ -22,7 +22,7 @@ connect_db(app)
 
 # toolbar = DebugToolbarExtension(app)
 
-runSeed()
+# runSeed()
 
 @app.route('/')
 def home():

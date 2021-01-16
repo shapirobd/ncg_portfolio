@@ -79,7 +79,7 @@ function generateContactHTML(info) {
 			</ul>
 		</div>
 		<div class="row justify-content-start">
-			<img id="prof-pic" class="col-12 col-lg-6 p-0 mr-0 mt-5" src="../static/images/contact_imgs/nickgriffo.jpg">
+			<img id="prof-pic" class="col-12 col-lg-6 p-0 mr-0 mt-5" src="https://ncgbucket.s3.amazonaws.com/images/contact_imgs/nickgriffo.jpg">
 		</div>
 	</div>`;
 }

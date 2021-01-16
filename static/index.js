@@ -72,7 +72,7 @@ function generateIndexListHTML(imgs) {
         <li>
             <div class="row justify-content-center thumbnail-div my-2">
                 <a id="${imgs[img].filename}" class="index-link" href="">
-                    <img class="thumbnail" src="static/images/${currentPage}/${imgs[img].filename}" />
+                    <img class="thumbnail" src="https://ncgbucket.s3.amazonaws.com/images/${currentPage}/${imgs[img].filename}" />
                 </a>
             <div>
         </li>`;

@@ -42,6 +42,7 @@ $(window).resize(function () {
 
 function handleImagesLink(resp) {
 	imgs = resp.data.imgs;
+
 	const firstImgHTML = generateImgHTML(
 		imgs[currentImgIndex].filename,
 		currentPage,
@@ -61,11 +62,11 @@ function handleImagesLink(resp) {
 function generateImgHTML(filename, folder, description) {
 	if (description) {
 		return `
-			<img id="main-img" src="../static/images/${folder}/${filename}" />
+			<img id="main-img" src="https://ncgbucket.s3.amazonaws.com/images/${folder}/${filename}" />
 			<p class="img-description">${description}</p>
 		`;
 	}
-	return `<img id="main-img" src="../static/images/${folder}/${filename}" />`;
+	return `<img id="main-img" src="https://ncgbucket.s3.amazonaws.com/images/${folder}/${filename}" />`;
 }
 
 function getNextOrPrevImg() {
