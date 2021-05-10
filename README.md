@@ -1,4 +1,6 @@
-# Nick Griffo's Website
+# Nicholas Griffo's Website
+
+Link to website [here](http://www.nicholasgriffo.com)
 
 ## Videos & Images
 
